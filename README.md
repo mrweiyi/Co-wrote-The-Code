@@ -23,5 +23,8 @@ ng new oj-client
 ../oj-client/src/app/components$ ng g c problem-list 
 (-it inline templete ; -is inline style)
 
+#Install bootstrap
+../oj-client$ npm install bootstrap@3 --save
+../oj-client$ npm install jquery --save
 
 ng serve
