@@ -27,4 +27,7 @@ ng new oj-client
 ../oj-client$ npm install bootstrap@3 --save
 ../oj-client$ npm install jquery --save
 
+# create Service
+../oj-client/src/app/services$ ng g s data
+
 ng serve
