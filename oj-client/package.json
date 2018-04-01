@@ -19,7 +19,7 @@
     "@angular/http": "^4.0.0",
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
-    "@angular/router": "^4.0.0",
+    "@angular/router": "^4.4.6",
     "ace-builds": "^1.2.6",
     "angular2-jwt": "^0.2.3",
     "bootstrap": "^3.3.7",
