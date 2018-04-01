@@ -1,7 +1,10 @@
 var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://user:user@ds133261.mlab.com:33261/cs503-1702');
+mongoose.connect('mongodb://ywei:luxifa0112@ds049898.mlab.com:49898/ywei-ojs-mgdb1', {
+  useMongoClient: true,
+  /* other options */
+});
 
 var restRouter = require('./routes/rest.js');
 var indexRouter = require('./routes/index.js');
