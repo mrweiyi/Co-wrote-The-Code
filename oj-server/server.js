@@ -17,8 +17,10 @@ app.use('/', indexRouter);
 
 app.use('/api/v1', restRouter);
 
-app.use(function(req, res, next) {
-  res.sendFile('index.html', {root: path.join(__dirname, '../public')});
+app.use(function (req, res, next) {
+  res.sendFile('index.html', {
+    root: path.join(__dirname, '../public')
+  });
 });
 
 // app.listen(3000, function () {
@@ -44,10 +46,8 @@ function onError(error) {
 
 function onListening() {
   var addr = server.address();
-  var bind = typeof addr === 'string'
-    ? 'pipe ' + addr
-    : 'port ' + addr.port;
+  var bind = typeof addr === 'string' ?
+    'pipe ' + addr :
+    'port ' + addr.port;
   console.log('Listening on ' + bind);
 }
-
- 
